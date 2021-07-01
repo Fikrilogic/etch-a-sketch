@@ -1,0 +1,96 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow: auto;
+}
+
+body {
+    background-color: #000000;
+    height: 90vh;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.right-menu, .left-menu {
+    display:fixed;
+    height: 300px;
+    width: 200px;
+    border: 1px solid #fff;
+    text-align: center;
+    display: block;
+}
+
+button {
+    width: 150px;
+    height: 70px;
+    word-wrap: initial;
+    color: #ffffff;
+    background-color: black;
+    border: 7px solid yellow;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    box-shadow: inset 0 0 0 0 yellow;
+}
+
+button:hover {
+    background-color: yellow;
+    color: #000;
+}
+.grid-container {
+    height: auto;
+    width:auto;
+    display: inline-grid;
+    border: 2px solid yellow;
+    overflow: hidden;
+    grid-gap: 1px;
+}
+.grid-container > div {
+    background-color: #fff;
+}
+
+.medium-grid {
+    grid-template-columns: repeat(10,auto);
+}
+.medium-grid > div {
+    width: 64px;
+    height: 64px;
+    border: 1px solid black;
+    margin: 0px;
+}
+
+.large-grid {
+    grid-template-columns: repeat(16,auto);
+}
+
+.large-grid> div{
+    width: 32px;
+    height: 32px;
+    border: 1px solid black;
+}
+
+.small-grid {
+    grid-template-columns: repeat(5,auto);
+}
+
+.small-grid > div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black; 
+}
+.reset {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
