@@ -55,13 +55,13 @@ function setGrid(size=10*10, style='medium-grid') {
 }
 
 const changeSizeGrid = () => {
-    let smallSize = 5*5;
-    let mediumSize = 10*10;
-    let largeSize = 16*16;
+    const smallSize = 5*5;
+    const mediumSize = 10*10;
+    const largeSize = 16*16;
 
-    let smallClass = 'small-grid';
-    let mediumClass = 'medium-grid';
-    let largeClass = 'large-grid';
+    const smallClass = 'small-grid';
+    const mediumClass = 'medium-grid';
+    const largeClass = 'large-grid';
 
     const btnChangeSize = document.querySelectorAll('.btn');
     console.log(btnChangeSize)
